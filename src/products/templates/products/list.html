@@ -1,0 +1,22 @@
+<!-- {{ object_list }}
+ -->
+<!-- {'paginator': None,
+ 'page_obj': None,
+ 'is_paginated': False,
+ 'object_list': <QuerySet [<Product: Celing Fan>]>, 
+ 'product_list': <QuerySet [<Product: Celing Fan>]>, 
+ 'view': <products.views.ProductListView object at 0x04025DA8>
+}
+
+
+{{ paginator }}
+
+{{ is_paginated }}
+
+{{ object_list }} -->
+
+{% for obj in object_list %}
+
+{{ obj.title }} <br/>
+
+{% endfor %}
